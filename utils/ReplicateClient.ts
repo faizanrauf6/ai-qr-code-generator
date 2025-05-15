@@ -31,6 +31,7 @@ export class ReplicateClient {
       },
     )) as QrCodeControlNetResponse;
 
+    console.log('Generated QR code:', output);
     if (!output) {
       throw new Error('Failed to generate QR code');
     }

@@ -27,7 +27,7 @@ export async function generateMetadata({
   }
 
   const title = `QrAI: ${data.prompt}`;
-  const description = `A QR code generated from qrGPT.io linking to: ${data.website_url}`;
+  const description = `A QR code generated from qrAI.io linking to: ${data.website_url}`;
   const image = data.image || 'https://qrGPT.io/og-image.png';
 
   return {
@@ -47,7 +47,7 @@ export async function generateMetadata({
       title,
       description,
       images: [image],
-      creator: '@nutlope',
+      creator: '@faizanrauf6',
     },
   };
 }
